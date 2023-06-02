@@ -25,7 +25,7 @@ if (isNaN(valor)){
     document.lasUnidades.unid_pulgada.value= 12 * valor;
     document.lasUnidades.unid_yarda.value= 0.333 * valor;
 }else if (id=="yarda"){
-    document.lasUnidades.unid_metro.value= 0.9144 * valor;
+    document.lasUnidades.unid_metro.value= 0.914 * valor;
     document.lasUnidades.unid_pulgada.value= 36 * valor;
     document.lasUnidades.unid_pie.value= 3 * valor;
 }
