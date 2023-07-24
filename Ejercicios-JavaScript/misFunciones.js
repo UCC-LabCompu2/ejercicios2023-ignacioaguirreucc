@@ -92,3 +92,18 @@ function calculardiv() {
     num2 = Number(document.getElementsByName("div_num2")[0].value);
     document.getElementsByName("div_total")[0].innerHTML = num1/num2;
 }
+
+function cargarweb(){
+    var cant,unidad,urlcomp;
+    cant=document.getElementById("distancia").value;
+    unidad=document.getElementsByName("unidades")[0].value;
+    urlcomp="segundaWeb.html#" + cant + "#" + unidad ;
+    window.open(urlcomp);
+}
+function cargaresultado(){
+    var urlcomp,can,un;
+   urlcomp=window.location.href.split("/")[5];
+    can=urlcomp.split("#")[1];
+    un=urlcomp.split("#")[2];
+    document.getElementById("dist").value=can + " " + un;
+}
