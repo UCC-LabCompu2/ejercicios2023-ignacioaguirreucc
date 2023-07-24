@@ -169,3 +169,17 @@ function dibujarcuadriculado(){
     ctx.closePath();
 
 }
+
+function dibujarimg(posx,posy){
+    var canvas= document.getElementById("myCanvas");
+    var ctx= canvas.getContext("2d");
+
+
+    console.log(posx,posy);
+    var img=new Image();
+    img.src="images/auto.png";
+
+    img.onload=function (){
+        ctx.drawImage(img,posx,posy);
+    }
+}
