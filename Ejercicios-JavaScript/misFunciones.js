@@ -116,7 +116,7 @@ function dibujarcircuad(){
     var xmax=canvas.width;
 
     ctx.fillStyle="#333899";
-    ctx.fillRect(0+margen,ymax-40-margen,40,40);
+    ctx.fillRect(0+margen,ymax-40-margen,39,40);
 
     ctx.arc(xmax/2,ymax/2,20,0,2*Math.PI);
     ctx.stroke();
@@ -176,6 +176,7 @@ function dibujarimg(posx,posy){
 
 
     console.log(posx,posy);
+
     var img=new Image();
     img.src="images/auto.png";
 
